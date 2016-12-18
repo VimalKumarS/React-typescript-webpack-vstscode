@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react": "registry:dt/react#0.14.0+20161211160957",
+    "react-dom": "registry:dt/react-dom#0.14.0+20161119154402"
+  },
+  "globalDependencies": {
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160726072212"
+  }
+}
