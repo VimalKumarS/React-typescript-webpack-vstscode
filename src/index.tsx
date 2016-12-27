@@ -5,6 +5,8 @@ import {Main} from './main';
 import { Hello } from "./Hello";
 import {Counter} from './increment'
 import {FilterList} from './unidirectional'
+import {Component} from "React";
+import {ListContainer} from "./fluxex/component/ListContainer"
 /*
 ReactDOM.render(
     <Hello compiler="TypeScript" framework="React" />,
@@ -20,6 +22,11 @@ ReactDOM.render(
     <FilterList />,
     document.getElementById("example")
 );*/
+ReactDOM.render(
+    <ListContainer />,
+    document.getElementById("example")
+);
+/*
 export class NotFound extends React.Component<any,undefined> {
      render(){
         return(
@@ -36,11 +43,11 @@ ReactDOM.render(
         <Route path="/" component={Hello}/>
          <Route path="/Counter" component={Counter}/>
           <Route path="/FilterList" component={FilterList}/>
-           <Route path='/*' component={NotFound} />
+           <Route path='*' component={NotFound} />
           </Route>
     </Router>,
     document.getElementById('example')
-);
+);*/
 
 //Todo
 //- Dynamically add componenet

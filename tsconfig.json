@@ -18,6 +18,9 @@
   ],
    "include": [
         "./**/*"
-    ]
-
+    ],
+"filesGlob": [
+    "./typings/index.d.ts"
+    
+  ]
 }
