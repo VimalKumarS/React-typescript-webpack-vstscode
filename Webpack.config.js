@@ -17,13 +17,20 @@ module.exports = {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
     },
-
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
     module: {
         loaders: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             //{ test: /\.tsx?$/, loader: "awesome-typescript-loader" }
              { test: /\.ts(x)?$/, loaders: ['react-hot','babel', 'ts-loader']  },
-              { test: /\.js?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ }
+              { test: /\.js?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
+              {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: 'style!css'
+            }
         ],
 
         preLoaders: [

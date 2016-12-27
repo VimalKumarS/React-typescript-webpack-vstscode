@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es6",
 
-     "noImplicitAny": true,
+     "noImplicitAny": false,
     "sourceMap": true,
     "jsx": "react",
       "preserveConstEnums": true,
@@ -12,8 +12,8 @@
         "noFallthroughCasesInSwitch": true
   },
   "exclude": [
-    "node_modules/**","node_modules",
-    "typings"
+    "node_modules/**","node_modules","typings"
+ 
             
   ],
    "include": [
